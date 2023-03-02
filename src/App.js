@@ -1,9 +1,9 @@
-import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HomeContainer } from './containers/homeContainer/HomeContainer';
 import { AboutContainer } from './containers/aboutContainer/AboutContainer';
 import { ProjectsContainer } from './containers/projectsContainer/ProjectsContainer';
 import { ResumeContainer } from './containers/resumeContainer/ResumeContainer';
+import { Navbar } from './components/navbar/Navbar';
 
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
   return (
 
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomeContainer mensaje={"SECCION HOME"} />}></Route>
         <Route path="/about" element={<AboutContainer mensaje={"SECCION ABOUT"} />}></Route>
