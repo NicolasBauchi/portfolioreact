@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HomeContainer } from './containers/homeContainer/HomeContainer';
+import { AboutContainer } from './containers/aboutContainer/AboutContainer';
+import { ProjectsContainer } from './containers/projectsContainer/ProjectsContainer';
+import { ResumeContainer } from './containers/resumeContainer/ResumeContainer';
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeContainer mensaje={"SECCION HOME"} />}></Route>
+        <Route path="/about" element={<AboutContainer mensaje={"SECCION ABOUT"} />}></Route>
+        <Route path="/projects" element={<ProjectsContainer mensaje={"SECCION PROJECTS"} />}></Route>
+        <Route path="/resume" element={<ResumeContainer mensaje={"SECCION RESUME"} />}></Route>
+      </Routes>
+    </BrowserRouter>
+
+
   );
+
 }
 
 export default App;
