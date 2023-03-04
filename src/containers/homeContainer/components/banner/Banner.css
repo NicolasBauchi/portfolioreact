@@ -1,0 +1,61 @@
+.main1 {
+  background: rgb(0, 91, 150);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 91, 150, 1) 0%,
+    rgba(100, 151, 177, 1) 100%
+  );
+}
+.containerBanner {
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+}
+
+.col {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-col {
+  width: 60%;
+  color: white;
+  padding: 20px;
+}
+.inner-col h1 {
+  font-size: 40px;
+}
+.inner-col h2 {
+  font-size: 30px;
+}
+.inner-col p {
+  font-size: 20px;
+}
+.saludo {
+  -webkit-animation: rotate 5s normal linear infinite;
+  animation: rotate 5s normal linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}

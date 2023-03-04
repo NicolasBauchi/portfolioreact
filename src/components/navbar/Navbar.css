@@ -7,7 +7,6 @@
   padding: 10px 0px;
   margin: 0px;
   background-color: #03396c;
-  
   -webkit-box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.75);
@@ -19,7 +18,7 @@
   filter: drop-shadow(5px 5px 5px #000);
 }
 .imagen:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .navNb {

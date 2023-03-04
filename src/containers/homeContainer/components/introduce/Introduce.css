@@ -1,0 +1,61 @@
+.containerIntroduce {
+  background: rgb(100, 151, 177);
+  background: linear-gradient(
+    180deg,
+    rgba(100, 151, 177, 1) 0%,
+    rgba(0, 91, 150, 1) 100%
+  );
+  height: 800px;
+  color: white;
+}
+
+.row-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 70%;
+}
+.row-intro-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 30%;
+}
+
+.col-intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.col-intro div {
+  width: 80%;
+}
+.col-intro b {
+  font-weight: 900;
+  color: #03396c;
+}
+.col-intro h3 {
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0px;
+  padding: 0px;
+}
+.col-intro p {
+  font-size: 20px;
+}
+#imgPropia {
+  height: 80%;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+#imgPropia:hover {
+  transform: scale(1.03, 1.03);
+  filter: drop-shadow(9px 9px 9px #000);
+  transition: 1s;
+}
+#iconos-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

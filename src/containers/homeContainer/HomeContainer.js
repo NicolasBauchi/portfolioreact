@@ -1,11 +1,15 @@
 import React from "react";
+import { Banner } from "./components/banner/Banner";
+import { Introduce } from "./components/introduce/Introduce";
 
 
 export const HomeContainer = (mensaje) => {
 
     return (
-        <> {console.log(mensaje)}
-        <h1>ESTE ES EL HOME</h1>
-        </>
+        <main>
+            <Banner />
+            {console.log(mensaje)}
+            <Introduce/>
+        </main>
     )
 }
