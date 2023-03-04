@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+  background-color: #011f4b;
+  color: white;
+}
+
+.col-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.col-footer ul li:hover {
+  transform: scale(1.1, 1.1);
+  transition: 600ms;
+}
+.col-footer ul li a {
+  text-decoration: none;
+}
+.col-footer ul li a:visited {
+  color: white;
+}
+
+.col-footer h5 {
+  font-weight: 500;
+  font-size: 15px;
+}

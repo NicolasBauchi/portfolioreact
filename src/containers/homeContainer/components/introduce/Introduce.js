@@ -1,12 +1,17 @@
 import React from "react";
 import "./Introduce.css"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 export const Introduce = () => {
     return (
         <div className="containerIntroduce">
             <div className="row-intro">
-
+                
+                <div className="col-intro">
+                    <img src={require("../../../../cvlogo.png")} id="imgPropia" alt="Mi foto de perfil" />
+                </div>
                 <div className="col-intro">
                     <div>
                         <h3>LET ME <b>INTRODUCE</b> MYSELF</h3>
@@ -22,18 +27,19 @@ export const Introduce = () => {
                 </div>
 
 
-                <div className="col-intro">
-                    <img src={require("../../../../cvlogo.png")} id="imgPropia" alt="Mi foto de perfil" />
-                </div>
+
             </div>
 
             <div className="row-intro-2">
                 <div className="col-intro">
-                    <h3>FIND ME ON</h3>
+                    <h3>FIND <b>ME</b> ON</h3>
                     <p>Feel free to <b>connect</b> with me</p>
-                    <p id="iconos-home">
-                        <span>icono 1</span><span>icono 2</span>
-                    </p>
+
+                    <ul id="iconos-home">
+                        <li><a href="https://www.linkedin.com/in/nicolasbauchi/"><LinkedInIcon fontSize="large" /></a></li>
+                        <li><a href="https://github.com/NicolasBauchi"><GitHubIcon fontSize="large" /></a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>

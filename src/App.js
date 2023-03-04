@@ -4,6 +4,7 @@ import { AboutContainer } from './containers/aboutContainer/AboutContainer';
 import { ProjectsContainer } from './containers/projectsContainer/ProjectsContainer';
 import { ResumeContainer } from './containers/resumeContainer/ResumeContainer';
 import { Navbar } from './components/navbar/Navbar';
+import { Footer } from "./components/footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/projects" element={<ProjectsContainer mensaje={"SECCION PROJECTS"} />}></Route>
         <Route path="/resume" element={<ResumeContainer mensaje={"SECCION RESUME"} />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
 
 

@@ -11,9 +11,9 @@ export const Banner = () => {
 
                 <div className="col" >
                     <div className="inner-col">
-                        <h1>Hi There! <b ><PanToolOutlinedIcon className="saludo" /></b></h1>
+                        <h1>Hi There! <PanToolOutlinedIcon className="saludo" fontSize="large" /></h1>
 
-                        <h2>I'm NICOLÁS BAUCHI</h2>
+                        <h2>I'm <b className="titulo-nombre">NICOLÁS BAUCHI</b></h2>
                         <p>
                             Front end React Developer
                         </p>

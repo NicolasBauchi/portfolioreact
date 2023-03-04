@@ -46,7 +46,7 @@
   font-size: 20px;
 }
 #imgPropia {
-  height: 80%;
+  height: 70%;
   filter: drop-shadow(5px 5px 5px #000);
 }
 #imgPropia:hover {
@@ -54,8 +54,22 @@
   filter: drop-shadow(9px 9px 9px #000);
   transition: 1s;
 }
+
 #iconos-home {
+  list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#iconos-home li:hover {
+  transform: scale(1.1, 1.1);
+  transition: 600ms;
+}
+#iconos-home li a {
+  text-decoration: none;
+}
+#iconos-home li a:visited {
+  color: white;
 }

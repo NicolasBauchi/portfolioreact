@@ -3,13 +3,12 @@ import { Banner } from "./components/banner/Banner";
 import { Introduce } from "./components/introduce/Introduce";
 
 
-export const HomeContainer = (mensaje) => {
+export const HomeContainer = () => {
 
     return (
         <main>
             <Banner />
-            {console.log(mensaje)}
-            <Introduce/>
+            <Introduce />
         </main>
     )
 }

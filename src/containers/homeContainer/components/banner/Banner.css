@@ -9,7 +9,7 @@
 .containerBanner {
   display: flex;
   flex-direction: row;
-  height: 700px;
+  height: 800px;
 }
 
 .col {
@@ -24,13 +24,21 @@
   padding: 20px;
 }
 .inner-col h1 {
-  font-size: 40px;
+  font-size: 60px;
 }
 .inner-col h2 {
-  font-size: 30px;
+  font-size: 50px;
 }
 .inner-col p {
-  font-size: 20px;
+  font-size: 25px;
+}
+.inner-col b {
+  font-weight: 900;
+  color: #03396c;
+}
+.titulo-nombre{
+  filter: drop-shadow(1px 1px 1px white);
+  
 }
 .saludo {
   -webkit-animation: rotate 5s normal linear infinite;
