@@ -1,12 +1,16 @@
 import React from "react";
+import { BannerAbout } from "./components/bannerAbout/BannerAbout";
+import { SkillSet } from "./components/skillSet/SkillSet";
 
 
 
-export const AboutContainer = (mensaje) => {
+
+export const AboutContainer = () => {
 
     return (
-        <>{console.log(mensaje)}
-            <h1>PAGINA ABOUT</h1>
-        </>
+        <main>
+            <BannerAbout />
+            <SkillSet />
+        </main>
     );
 }

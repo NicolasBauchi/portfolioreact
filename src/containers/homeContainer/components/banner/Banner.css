@@ -36,9 +36,8 @@
   font-weight: 900;
   color: #03396c;
 }
-.titulo-nombre{
+.titulo-nombre {
   filter: drop-shadow(1px 1px 1px white);
-  
 }
 .saludo {
   -webkit-animation: rotate 5s normal linear infinite;

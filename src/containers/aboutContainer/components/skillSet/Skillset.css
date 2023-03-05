@@ -1,0 +1,43 @@
+#sec-skillset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3cde0;
+}
+#sec-skillset h1 {
+  font-size: 50px;
+}
+#sec-skillset b {
+  font-weight: 900;
+  color: #03396c;
+}
+#sec-skillset ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+}
+#sec-skillset ul li {
+  padding: 30px 60px;
+  border: 2px solid #03396c;
+  -webkit-box-shadow: 10px 10px 15px 1px rgba(3, 57, 108, 1);
+  -moz-box-shadow: 10px 10px 15px 1px rgba(3, 57, 108, 1);
+  box-shadow: 10px 10px 15px 1px rgba(3, 57, 108, 1);
+
+}
+
+#sec-skillset ul li:hover {
+  transform: scale(1.05, 1.05);
+  transition: 700ms;
+}
+
+#sec-skillset ul li img{
+  filter: saturate(0);
+}
+#sec-skillset ul li img:hover{
+  filter: saturate(1);
+  transition: 700ms;
+}
